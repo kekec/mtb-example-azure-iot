@@ -47,7 +47,7 @@
 /* Macro value 0 indicates that SAS token-based authentication is not used.
  * Macro value 1 indicates that SAS token-based authentication is used.
  */
-#define SAS_TOKEN_AUTH                  0
+#define SAS_TOKEN_AUTH                  1
 
 /*
  * Macro value true indicates that the SAS token needs to be read from
@@ -56,7 +56,7 @@
  * Macro value false indicates that the SAS token needs to be read from
  * the secured memory (only for secured platform device).
  */
-#define SAS_TOKEN_LOCATION_FLASH        false
+#define SAS_TOKEN_LOCATION_FLASH        1
 
 #define test_result_t cy_rslt_t
 #define TEST_PASS  CY_RSLT_SUCCESS

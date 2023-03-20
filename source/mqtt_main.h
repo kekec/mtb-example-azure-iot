@@ -46,9 +46,9 @@
 
 /* Macro for Wi-Fi connection */
 /* Wi-Fi SSID */
-#define WIFI_SSID                               "Replace this string by WiFi SSID"
+#define WIFI_SSID                               "YOUR_SSID"
 /* Wi-Fi PASSWORD */
-#define WIFI_PASSWORD                           "Replace this string by WiFi PASSWORD"
+#define WIFI_PASSWORD                           "YOUR_PASSWD"
 
 /* Security type of the Wi-Fi access point. See 'cy_wcm_security_t' structure
  * in "cy_wcm.h" for more details.
@@ -60,7 +60,7 @@
 
 /* MQTT client identifier for Azure broker */
 /* Unique Device identifier, used only with SAS Authentication*/
-#define MQTT_CLIENT_IDENTIFIER_AZURE_SAS        "Replace this string by device ID generated from Azure cloud"
+#define MQTT_CLIENT_IDENTIFIER_AZURE_SAS        "test"
 /* Unique Device identifier, used only with X509 Authentication */
 #define MQTT_CLIENT_IDENTIFIER_AZURE_CERT       "Replace this string by device ID generated from Azure cloud"
 
@@ -79,7 +79,7 @@
 /* Azure Server endpoints used for the demos */
 /* "Replace this string by generated IoT Host name from Azure cloud".
  * Example: my-azure-hubname.azure-devices.net */
-#define IOT_DEMO_SERVER_AZURE                   "<hub_name>.azure-devices.net"
+#define IOT_DEMO_SERVER_AZURE                   "ifxtest.azure-devices.net"
 #define IOT_DEMO_PORT_AZURE_S                   ( 8883 )
 
 /*
@@ -89,11 +89,11 @@
  */
 /* Update the hub and device name in the string. */
 /* Example: IOT_DEMO_SERVER_AZURE "/" "my_azure_dev1" "/?api-version=2018-06-30" */
-#define IOT_AZURE_USERNAME                      IOT_DEMO_SERVER_AZURE "/" "<dev_ID>" "/?api-version=2018-06-30"
+#define IOT_AZURE_USERNAME                      IOT_DEMO_SERVER_AZURE "/" "test" "/?api-version=2018-06-30"
 #define IOT_AZURE_USERNAME_LENGTH               ( ( uint16_t ) ( sizeof( IOT_AZURE_USERNAME ) - 1 ) )
 
 /* Update the SAS token, Example: "SharedAccessSignature sr= ... 5560" */
-#define IOT_AZURE_PASSWORD                      "Replace this string by generated SAS token."
+#define IOT_AZURE_PASSWORD                      "SharedAccessSignature sr=ifxtest.azure-devices.net%2Fdevices%2Ftest&sig=ABCD...&se=1234567"
 #define IOT_AZURE_PASSWORD_LENGTH                ( ( uint16_t ) ( sizeof( IOT_AZURE_PASSWORD ) - 1 ) )
 
 /* For DPS application */
